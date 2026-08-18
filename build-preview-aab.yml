@@ -1,0 +1,50 @@
+name: Build Android AAB Preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Generate Android platform
+        shell: bash
+        run: |
+          rm -rf .android_template
+          flutter create --platforms=android --org=com.koraonline --project-name=matches .android_template
+          rm -rf android
+          cp -R .android_template/android ./android
+          rm -rf .android_template
+          python3 scripts/patch_android_identity.py
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Analyze
+        run: flutter analyze
+
+      - name: Build preview App Bundle
+        run: flutter build appbundle --release --target-platform android-arm64
+
+      - name: Upload AAB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kora-online-preview-aab
+          path: build/app/outputs/bundle/release/app-release.aab

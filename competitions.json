@@ -1,0 +1,200 @@
+{
+  "lastUpdateId": 5727375519,
+  "requestedUpdateId": -1,
+  "ttl": 300,
+  "sports": [
+    {
+      "id": 1,
+      "name": "كرة قدم",
+      "nameForURL": "football",
+      "drawSupport": true,
+      "imageVersion": 1
+    }
+  ],
+  "countries": [
+    {
+      "id": 19,
+      "name": "أوروبا",
+      "totalGames": 3,
+      "liveGames": 0,
+      "nameForURL": "europe",
+      "imageVersion": 1,
+      "isInternational": true
+    }
+  ],
+  "competitions": [
+    {
+      "id": 332,
+      "countryId": 19,
+      "sportId": 1,
+      "name": "تصفيات ابطال اوروبا",
+      "hasStandings": false,
+      "hasBrackets": true,
+      "hasStats": true,
+      "hasTransfers": false,
+      "hasBets": false,
+      "totalGames": 3,
+      "liveGames": 0,
+      "nameForURL": "uefa-champions-league-qualifiers",
+      "popularityRank": 41984761,
+      "hasActiveGames": true,
+      "bracketsName": "خروج المغلوب",
+      "currentSeasonNum": 11,
+      "currentStageNum": 4,
+      "seasons": [
+        {
+          "num": 11,
+          "name": "2026/2027",
+          "useName": false,
+          "competitionId": 0,
+          "hasStandings": false,
+          "stages": [
+            {
+              "num": -1,
+              "name": "Default",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 1
+            },
+            {
+              "num": 1,
+              "name": "الدور 1",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 3
+            },
+            {
+              "num": 2,
+              "name": "الدور 2",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 3
+            },
+            {
+              "num": 3,
+              "name": "الدور 3",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 3
+            },
+            {
+              "num": 4,
+              "name": "بلاي اوف",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 3
+            }
+          ]
+        }
+      ],
+      "color": "#09123E",
+      "competitorsType": 1,
+      "imageVersion": 8,
+      "hideOnCatalog": false,
+      "hideOnSearch": false,
+      "hasCurrentStageStandings": false,
+      "hasHistory": false,
+      "isActive": true
+    },
+    {
+      "id": 572,
+      "countryId": 19,
+      "sportId": 1,
+      "name": "دوري أبطال اوروبا",
+      "hasStandings": true,
+      "hasBrackets": false,
+      "hasStats": true,
+      "hasTransfers": false,
+      "hasLiveStandings": false,
+      "hasStandingsGroups": false,
+      "hasBets": false,
+      "totalGames": 0,
+      "liveGames": 0,
+      "nameForURL": "uefa-champions-league",
+      "popularityRank": 120777558,
+      "tableName": "الترتيب",
+      "currentSeasonNum": 74,
+      "currentStageNum": 1,
+      "seasons": [
+        {
+          "num": 74,
+          "name": "2026/2027",
+          "useName": false,
+          "competitionId": 0,
+          "hasStandings": true,
+          "stages": [
+            {
+              "num": -1,
+              "name": "Default",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 1
+            },
+            {
+              "num": 1,
+              "name": "مرحلة الدوري",
+              "useName": false,
+              "hasStandings": true,
+              "isFinal": false,
+              "stageType": 1
+            },
+            {
+              "num": 2,
+              "name": "بلاي اوف",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 3
+            },
+            {
+              "num": 3,
+              "name": "دور الـ 16",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 3
+            },
+            {
+              "num": 4,
+              "name": "ربع النهائي",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 3
+            },
+            {
+              "num": 5,
+              "name": "نصف النهائي",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 3
+            },
+            {
+              "num": 6,
+              "name": "النهائي",
+              "useName": true,
+              "hasStandings": false,
+              "isFinal": false,
+              "stageType": 3
+            }
+          ]
+        }
+      ],
+      "color": "#09123E",
+      "competitorsType": 1,
+      "imageVersion": 5,
+      "hideOnCatalog": false,
+      "hideOnSearch": false,
+      "hasCurrentStageStandings": true,
+      "hasHistory": true,
+      "isActive": false
+    }
+  ]
+}
